@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+		<template id="menu_popup" name="menu_popup menu" inherit_id="web.menu">
+			<xpath expr="//ul[@class='nav navbar-nav navbar-right oe_systray']" position="after">
+				<ul class="nav navbar-nav navbar-right oe_menu_popup">
+					<li>
+						<div class="menu_popup">
+						<t t-if="menu_popup">
+							<div><span t-esc="menu_popup.name" /></div>
+						</t>
+						<t t-if="not menu_popup">
+							<div>Active <span>NOW!</span></div>
+						</t>
+						<i class="fa fa-angle-down"></i>
+						</div>
+						<div class="menu_popup_image" style="display:none;">
+							
+						</div>
+					</li>
+				</ul>
+			</xpath>
+		</template>
+
+	</data>
+</openerp>

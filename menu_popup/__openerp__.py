@@ -34,6 +34,9 @@ The new special menu
     'depends': [
     ],
     'data': [
+        'views/menu_popup_view.xml',
+        'templates/templates.xml',
+        'templates/webclient_templates.xml',
     ],
     'qweb': [
     ],

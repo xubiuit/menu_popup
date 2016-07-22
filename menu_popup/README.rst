@@ -1,5 +1,5 @@
 ==================
-Odoo Menu Popup v9
+Odoo Menu Popup v8
 ==================
 This project aims to give to you a special Menu
 
@@ -27,3 +27,23 @@ Thank you.
 Configuration
 =============
 
+Create main popup
+
+|
+.. figure:: create.jpg
+   :alt: Create main popup
+   :scale: 80 %
+   :align: center
+   :figclass: text-center
+|
+
+
+Setup popup items
+
+|
+.. figure:: popup_line.jpg
+   :alt: Setup popup items
+   :scale: 80 %
+   :align: center
+   :figclass: text-center
+|

@@ -21,5 +21,4 @@
 #
 ##############################################################################
 
-import models
-import controllers
+import ir_ui_view
