@@ -27,6 +27,17 @@ Thank you.
 Configuration
 =============
 
+Main design
+
+|
+.. figure:: design.jpg
+   :alt: Main design
+   :scale: 80 %
+   :align: center
+   :figclass: text-center
+|
+
+
 Create main popup
 
 |

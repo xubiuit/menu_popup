@@ -1,6 +1,6 @@
 .oe_menu_popup {
 	margin-right: 5px !important;
-    min-width: 80px;
+    min-width: 90px;
 }
 
 .oe_menu_popup li {
@@ -20,7 +20,7 @@
     text-align: center;
     position: relative;
     border-bottom: 1px solid #FFF176;
-   	padding: 3px;
+   	padding: 3px 10px;
     cursor: pointer;
 }
 

@@ -34,6 +34,7 @@ The new special menu
     'depends': [
     ],
     'data': [
+        'security/ir.model.access.csv',
         'views/menu_popup_view.xml',
         'templates/templates.xml',
         'templates/webclient_templates.xml',
