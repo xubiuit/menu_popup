@@ -1,6 +1,10 @@
+#swipebox-overlay {
+  background: url('/menu_popup/static/src/img/trans_black_75.png') !important;
+}
+
 .oe_menu_popup {
-	margin-right: 5px !important;
-    min-width: 90px;
+	margin-right: -5px !important;
+    min-width: 100px;
 }
 
 .oe_menu_popup li {
