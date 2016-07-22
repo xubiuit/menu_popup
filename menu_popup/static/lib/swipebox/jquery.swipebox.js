@@ -896,9 +896,36 @@
 			
 			getVideoThumb : function( url ) {
 				var $this = this,
-				id = $this.getYoutubeID( url ),
-				thumb_url = "http://i.ytimg.com/vi/"+ id +"/mqdefault.jpg";
+				thumb_url = '';
+				
+				/**
+				 * Check video is Youtube or Vimeo
+				 */
+				var video_type = $this.check_video_by_url(url);
+				switch (video_type) {
+					case 'youtube':
+						var id = $this.getYoutubeID( url ),
+						thumb_url = "http://i.ytimg.com/vi/"+ id +"/mqdefault.jpg";
+						break;
+					case 'vimeo':
+						thumb_url = '/menu_popup/static/src/img/vimeo.png';
+						break;
+					default:
+						thumb_url = '/menu_popup/static/src/img/player.png';
+						break;
+				}
+				
 				return '<img class="img-thum" src="'+ thumb_url +'" />';
+			},
+			
+			check_video_by_url: function(url) {
+				if ( url.match( /(youtube\.com|youtube-nocookie\.com)\/watch\?v=([a-zA-Z0-9\-_]+)/) || url.match( /youtu\.be\/([a-zA-Z0-9\-_]+)/ ) ) {
+					return 'youtube';
+				} else if (url.match( /vimeo\.com\/([0-9]*)/ )) {
+					return 'vimeo';
+				}
+				
+				return false;
 			},
 
 			/**

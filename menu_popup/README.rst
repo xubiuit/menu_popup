@@ -47,3 +47,44 @@ Setup popup items
    :align: center
    :figclass: text-center
 |
+
+Youtube Video
+
+|
+.. figure:: youtube.jpg
+   :alt: Youtube Video
+   :scale: 80 %
+   :align: center
+   :figclass: text-center
+|
+
+Vimeo Video
+
+|
+.. figure:: vimeo.jpg
+   :alt: Vimeo Video
+   :scale: 80 %
+   :align: center
+   :figclass: text-center
+|
+
+Image
+
+|
+.. figure:: image.jpg
+   :alt: Image
+   :scale: 80 %
+   :align: center
+   :figclass: text-center
+|
+
+Webpage URL
+
+|
+.. figure:: webpage.jpg
+   :alt: Webpage URL
+   :scale: 80 %
+   :align: center
+   :figclass: text-center
+|
+
