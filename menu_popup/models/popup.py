@@ -33,6 +33,10 @@ class popup(models.Model):
     lines = fields.One2many(
         'menu.popup.line', 'menu_popup_id', string='Popup lines')
 
+    _sql_constraints = [
+        ('name_uniq', 'unique (name)', 'The Popup Name must be unique !'),
+    ]
+
     @api.model
     def create(self, vals):
         if vals and vals.get('active', False):
