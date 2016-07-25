@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 			).then(function (results) {
 				
-				if (results) {
+				if (results || results.length > 0) {
 					
 					var html = '';
 					_.each(results, function(item) {
@@ -33,6 +33,13 @@ $(document).ready(function() {
 					$( '.menu_popup_image a' ).swipebox();
 					
 					$(".menu_popup_image a").first().trigger( "click" );
+				} else {
+					var instance = openerp;
+					var _t = instance.web._t;
+					new instance.web.Dialog(this,
+							{ title: _t("Warning"),
+								size: 'medium',},
+							$("<div />").text(_t("Please config your content at Popup menu."))).open();
 				}
 			});
 	}

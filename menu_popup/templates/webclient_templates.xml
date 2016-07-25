@@ -11,7 +11,7 @@
 							<div><span t-esc="menu_popup.name" /></div>
 						</t>
 						<t t-if="not menu_popup">
-							<div>Active <span>NOW!</span></div>
+							<div>Config <span>ME!!!</span></div>
 						</t>
 						<i class="fa fa-angle-down"></i>
 						</div>

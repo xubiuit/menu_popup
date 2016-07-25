@@ -3,7 +3,7 @@
 }
 
 .oe_menu_popup {
-	margin-right: -5px !important;
+	margin-right: 5px !important;
     min-width: 100px;
 }
 
@@ -19,7 +19,7 @@
     margin: 0 0% 0 2%;
     float: left;
     display: inline-block;
-    background-color: #41BB3E;
+    background-color: #2196F3;
     color: #FFF;
     text-align: center;
     position: relative;
@@ -29,36 +29,34 @@
 }
 
 .menu_popup:hover {
-	background-color: #27ae60;
+	background-color: #1976D2;
 	padding-top: 4px;
 }
 
 .menu_popup:before {
-	content: '';
-	position: absolute;
-	bottom: 0;
 	left: -10px;
-	height: 5%;
-	width: 50%;
-	width: 0;
-	height: 0;
-	border-style: solid;
 	border-width: 0 10px 6px 0;
-	border-color: transparent #0E6D32 transparent transparent;
+	border-color: transparent #1565C0 transparent transparent;
 }
 
+.menu_popup:after {
+	right: -10px;
+	border-width: 6px 10px 0 0;
+	border-color: #1565C0 transparent transparent transparent;
+}
+
+.menu_popup:before,
 .menu_popup:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
-	right: -10px;
 	height: 5%;
 	width: 50%;
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 6px 10px 0 0;
-	border-color: #0E6D32 transparent transparent transparent;
+	
+	
 }
 
 .menu_popup > i {
