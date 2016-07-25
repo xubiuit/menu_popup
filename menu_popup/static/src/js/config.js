@@ -1,4 +1,4 @@
-odoo.define('menu_popup.menu_popup_active', function (require) {
+odoo.define('menu_popup.menu_popup', function (require) {
 "use strict";
 
 	var core = require('web.core');
