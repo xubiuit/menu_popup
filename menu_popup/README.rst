@@ -1,5 +1,5 @@
 ==================
-Odoo Menu Popup v8
+Odoo Menu Popup v9
 ==================
 This project aims to give to you a special Menu
 
@@ -20,7 +20,7 @@ In this case you have to install the modules into /opt/odoo/custom/addons. At th
 
 Usage
 =====
-Maybe images in github do not fit with the Odoo apps, so you can check: https://apps.odoo.com/apps/modules/8.0/menu_popup/ for more details.
+Maybe images in github do not fit with the Odoo apps, so you can check: https://apps.odoo.com/apps/modules/9.0/menu_popup/ for more details.
 Thank you.
 
 

@@ -52,13 +52,26 @@
 				</form>
 			</field>
 		</record>
+		
+		<record id="view_menu_popup_search" model="ir.ui.view">
+            <field name="name">menu.popup.view.search</field>
+            <field name="model">menu.popup</field>
+            <field name="arch" type="xml">
+                <search string="Menu Popup">
+                    <filter string="Active" name="current" domain="[('active', '=', True)]"/>
+                    <filter string="Inactive" name="inactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+       </record>
 
 		<record id="action_menu_popup_tree" model="ir.actions.act_window">
 			<field name="name">Menu Popup</field>
 			<field name="res_model">menu.popup</field>
 			<field name="view_type">form</field>
 			<field name="view_mode">tree,form</field>
+			<field name="context">{'search_default_current': 1}</field>
 			<field name="view_id" ref="view_menu_popup_tree" />
+			<field name="search_view_id" ref="view_menu_popup_search"/>
 		</record>
 
 		<menuitem id="menu_popup_root" name="Popup" sequence="300" />
