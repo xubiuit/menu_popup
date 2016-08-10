@@ -3,7 +3,7 @@
 }
 
 .oe_menu_popup {
-	margin-right: 5px !important;
+	margin-right: -5px !important;
     min-width: 100px;
 }
 
